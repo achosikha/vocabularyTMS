@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class VocabularyApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         // Надо прорисовать окно
@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         // Задать ему параметры
         // Нанести на это окно объекты
         // А потом все это сделать видимым - stage.show();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("vocabularyTable.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(VocabularyApplication.class.getResource("vocabularyTable.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 800);
         stage.setTitle("Vocabulary TMS");
         stage.setScene(scene);
